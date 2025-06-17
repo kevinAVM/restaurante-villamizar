@@ -130,5 +130,129 @@ header p {
   }
 }
 
+/* Sección general */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+/* Títulos de secciones */
+section h2 {
+  font-size: 2.2rem;
+  color: #fbbf24;
+  margin-bottom: 15px;
+  border-left: 6px solid #fbbf24;
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+/* FORMULARIO de reservas */
+form {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  margin-top: 20px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form button {
+  background-color: #fbbf24;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Texto de "Nosotros" y "Contacto" */
+section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* Mensaje reserva */
+#msgReserva {
+  margin-top: 15px;
+  color: #4ade80;
+  font-weight: bold;
+}
+#nosotros {
+  background-image: url("img/nosotros.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.85); /* oscurece la imagen */
+  z-index: -1;
+}
+
+#nosotros p {
+  position: relative;
+  z-index: 2;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #1e1e1e;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbbf24;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fbbf24;
+}
+
+
+
 
 
