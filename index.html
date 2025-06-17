@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Villamizar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Restaurante Villamizar</h1>
+    <p>Sabor que conquista cada bocado</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menú</a>
+    <a href="#reserva">Reservas</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Menú</h2>
+    <div class="platos">
+      <div class="plato">
+        <img src="img/plato1.jpg" alt="Bandeja paisa">
+        <h3>Bandeja Paisa</h3>
+        <p>$25.000</p>
+      </div>
+      <div class="plato">
+        <img src="img/plato2.jpg" alt="Mojarra Frita">
+        <h3>Mojarra Frita</h3>
+        <p>$22.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserva">
+    <h2>Reservas</h2>
+    <form id="formReserva">
+      <input type="text" placeholder="Nombre" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" placeholder="N° de personas" required>
+      <button type="submit">Reservar</button>
+    </form>
+    <p id="msgReserva"></p>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un restaurante familiar en Montería que fusiona tradición y sabor costeño con atención de primera.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Calle 41 #12-34, Montería<br>📞 300 123 4567<br>📩 contacto@villamizar.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Restaurante Villamizar - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
